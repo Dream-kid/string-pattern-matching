@@ -52,14 +52,14 @@ namespace SuffixArray {
             }
         }
         // Remove this part if you don't need the LCP
-        // int size = 0, i, j;
-        // for(i = 0; i < n; i++) if (rank[i] > 0) {
-        //     j = sa[rank[i] - 1];
-        //     while(s[i + size] == s[j + size]) ++size;
-        //     lcp[rank[i]] = size;
-        //     if (size > 0) --size;
-        // }
-        // lcp[0] = 0;
+         int size = 0, i, j;
+         for(i = 0; i < n; i++) if (rank[i] > 0) {
+            j = sa[rank[i] - 1];
+             while(s[i + size] == s[j + size]) ++size;
+            lcp[rank[i]] = size;
+             if (size > 0) --size;
+         }
+         lcp[0] = 0;
     }
 };
 
