@@ -20,6 +20,7 @@
 //        lcp[i] = lcp(s + sa[i], s + sa[i-1]). lcp[0] = 0.
 
 
+const int MAXN = 100005;
 char s[MAXN];
 
 namespace SuffixArray {
